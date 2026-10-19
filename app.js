@@ -1,6 +1,7 @@
 import PromptSync from "prompt-sync";
 const prompt = PromptSync()
 import hospedes from "./hospedes.js";
+import adicionarHospede from "./adicionarHospede.js";
 
 let indice = true
 
@@ -15,7 +16,8 @@ do{
     let resposta = (prompt("Escolha uma opção: ")).trim()
     switch(resposta){
         case "1":
-
+        let nHospede = adicionarHospede.coletaInformacoes(hospedes)
+        adicionarHospede.addHospede(hospedes,nHospede)
         break
         case "2":
 
