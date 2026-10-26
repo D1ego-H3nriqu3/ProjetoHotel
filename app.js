@@ -3,6 +3,7 @@ const prompt = PromptSync()
 import hospedes from "./hospedes.js";
 import adicionarHospede from "./adicionarHospede.js";
 import listarHospedes from "./listarHospedes.js";
+import attHospede from "./atualizarHospede.js";
 
 let indice = true
 
@@ -24,7 +25,7 @@ do{
         listarHospedes(hospedes)
         break
         case "3":
-
+        attHospede(hospedes)
         break
         case "4":
 
