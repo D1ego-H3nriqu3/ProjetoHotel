@@ -5,7 +5,7 @@ import adicionarHospede from "./adicionarHospede.js";
 import listarHospedes from "./listarHospedes.js";
 import attHospede from "./atualizarHospede.js";
 import checkout from "./checkout.js";
-
+import calcConta from "./calcContas.js";
 
 let indice = true
 
@@ -33,7 +33,7 @@ do{
         checkout(hospedes)
         break
         case "5":
-
+        calcConta(hospedes)
         break
         case "0":
         indice = false
