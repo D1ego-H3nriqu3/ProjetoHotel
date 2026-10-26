@@ -4,6 +4,8 @@ import hospedes from "./hospedes.js";
 import adicionarHospede from "./adicionarHospede.js";
 import listarHospedes from "./listarHospedes.js";
 import attHospede from "./atualizarHospede.js";
+import checkout from "./checkout.js";
+
 
 let indice = true
 
@@ -28,7 +30,7 @@ do{
         attHospede(hospedes)
         break
         case "4":
-
+        checkout(hospedes)
         break
         case "5":
 
